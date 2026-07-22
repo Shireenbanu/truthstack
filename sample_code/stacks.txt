@@ -1,0 +1,23 @@
+jdk.ExecutionSample {
+  startTime = 20:01:36.565 (2026-07-22)
+  sampledThread = "JFR Shutdown Hook" (javaThreadId = 21)
+  state = "STATE_RUNNABLE"
+  stackTrace = [
+    java.util.ArrayList$Itr.hasNext() line: 1044
+    jdk.jfr.internal.MetadataWriter.write(DataOutput, MetadataDescriptor$Element, HashMap) line: 153
+    jdk.jfr.internal.MetadataWriter.write(DataOutput, MetadataDescriptor$Element, HashMap) line: 159
+    jdk.jfr.internal.MetadataWriter.write(DataOutput, MetadataDescriptor$Element, HashMap) line: 159
+    jdk.jfr.internal.MetadataWriter.write(DataOutput, MetadataDescriptor$Element, HashMap) line: 159
+    jdk.jfr.internal.MetadataWriter.writeBinary(DataOutput) line: 94
+    jdk.jfr.internal.MetadataDescriptor.write(List, DataOutput) line: 273
+    jdk.jfr.internal.MetadataRepository.getBinaryRepresentation() line: 271
+    jdk.jfr.internal.MetadataRepository.storeDescriptorInJVM() line: 243
+    jdk.jfr.internal.MetadataRepository.setOutput(String) line: 293
+    jdk.jfr.internal.PlatformRecorder.stop(PlatformRecording) line: 327
+    jdk.jfr.internal.PlatformRecording.stop(String) line: 169
+    jdk.jfr.internal.ShutdownHook.dump(PlatformRecording) line: 71
+    jdk.jfr.internal.ShutdownHook.run() line: 57
+    java.lang.Thread.run() line: 1583
+  ]
+}
+
